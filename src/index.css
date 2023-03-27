@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --text: #eff8ff;
+    --text-secondary: #9aa0a6;
+    --bg: #0F0F0F;
+    --primary: #5a6f93;
+    --card: #292a2d;
+    --default: #333;
+}
+
+
+body {
+    background: var(--bg);
+    overflow: auto !important;
+    mix-blend-mode: unset;
+    color: var(--text-secondary) !important;
+    font-family: 'Montserrat', sans-serif !important;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--text);
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+h4 {
+    font-weight: 500;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.root {
+    padding: .25em;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.text {
+    width: 2em;
+    height: 2em;
+    font-weight: bold;
+}
+
+.memodzi {
+    filter: grayscale(1);
+    transition: all ease-in-out .2s;
+    width: 100%;
+    &:hover, &[autoPlay], &.checked {
+        filter: grayscale(0);
+        transform: scale(1.35);
+    }
+}
+
+
+.items {
+    transition: all ease-in-out .5s;
+    width: 100%;
+    margin-top: 2em;
+    padding-bottom: 1em;
+}
+
+.item {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    padding: 0 1em;
+
+    &::-webkit-scrollbar {
+        display: none;  /* Safari and Chrome */
+    }
+
+    & *:first-child {
+        margin-left: auto;
+     }
+    & *:last-child {
+        margin-right: auto;
+     }
+}
+
+.count {
+    width: 100%;
+    font-size: .8em;
+    opacity: 0;
+
+    &.active {
+        opacity: 1;
+    }
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 4em;
+}
+
+.name {
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+/*.active {*/
+/*    filter: blur(0px);*/
+/*    opacity: 1;*/
+/*    position: relative;*/
+/*    margin-top: 0em;*/
+/*}*/

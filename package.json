@@ -1,0 +1,26 @@
+{
+  "name": "Foorms",
+  "packageManager": "yarn@3.2.4",
+  "scripts": {
+    "dev": "node esbuild.config.js --watch",
+    "build": "node esbuild.config.js --production",
+    "back": "node ./dist/back.js"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "cors": "^2.8.5",
+    "esbuild": "0.16.14",
+    "esbuild-plugin-svgr": "^1.1.0",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "postcss": "^8.4.21",
+    "postcss-each": "^1.1.0",
+    "postcss-modules": "^6.0.0",
+    "postcss-preset-env": "6.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.9.0",
+    "react-router-dom": "^6.9.0",
+    "uuid": "^9.0.0"
+  }
+}
