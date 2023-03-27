@@ -10,7 +10,7 @@ const config = {
   entryPoints: {
     client: 'src/index.tsx',
   },
-  outdir: './dist/',
+  outdir: './docs/',
   bundle: true,
   watch: process.argv.includes('--watch'),
   sourcemap: !isProduction,
@@ -40,10 +40,10 @@ const config = {
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            ${css.map(src => `<link rel="stylesheet" href="./${src}">`)}
+            ${css.map(src => `<link rel="stylesheet" href="/${src}">`)}
         </head>
         <body>
-            ${js.map(src => `<script src="./${src}" defer=""></script>`)}
+            ${js.map(src => `<script src="/${src}" defer=""></script>`)}
         </body>
         </html>
       `
@@ -56,7 +56,7 @@ esbuild
 
 
 esbuild.build({
-  outdir: './dist/',
+  outdir: './docs/',
   bundle: true,
   entryPoints: { back: 'src/back.ts' },
   platform: "node",
