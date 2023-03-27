@@ -40,10 +40,10 @@ const config = {
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            ${css.map(src => `<link rel="stylesheet" href="/${src}">`)}
+            ${css.map(src => `<link rel="stylesheet" href="./${src}">`)}
         </head>
         <body>
-            ${js.map(src => `<script src="/${src}" defer=""></script>`)}
+            ${js.map(src => `<script src="./${src}" defer=""></script>`)}
         </body>
         </html>
       `
