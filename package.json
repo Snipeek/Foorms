@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "node esbuild.config.js --watch",
     "build": "node esbuild.config.js --production",
-    "back": "node ./docs/back.js"
+    "back": "node dist/back.js"
   },
   "dependencies": {
     "classnames": "^2.3.2",

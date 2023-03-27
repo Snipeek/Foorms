@@ -10,7 +10,7 @@ const config = {
   entryPoints: {
     client: 'src/index.tsx',
   },
-  outdir: './docs/',
+  outdir: './dist/',
   bundle: true,
   watch: process.argv.includes('--watch'),
   sourcemap: !isProduction,
@@ -56,7 +56,7 @@ esbuild
 
 
 esbuild.build({
-  outdir: './docs/',
+  outdir: './dist/',
   bundle: true,
   entryPoints: { back: 'src/back.ts' },
   platform: "node",
